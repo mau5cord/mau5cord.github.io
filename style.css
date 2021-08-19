@@ -1,0 +1,28 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#main {
+	font-family: "Segoe UI", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+	margin: 0 auto;
+	max-width: 500px;
+	padding-top: 50px;
+	padding: 20px;
+}
+
+a {
+	text-decoration: none;
+}
+
+h2 {
+	color: #222;
+}
+
+.box {
+	border: 1px solid #aaa;
+	padding: 16px;
+	margin: 10px 0;
+	color: #333;
+	border-radius: 4px;
+}
