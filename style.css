@@ -39,6 +39,9 @@ h3 {
 	font-size: large;
 	font-weight: 600;
 }
+.box:hover {
+	background: rgba(255,255,255,0.1);
+}
 .box span {
 	vertical-align: middle;
 }
@@ -66,11 +69,39 @@ h3 {
 	margin: 10px 0;
 }
 
-.imgrow img {
+.imgrow.covers img {
+	height: 85px;
 	width: 85px;
 	border-radius: 10px;
 }
-.imgrow.smaller img {
-	width: 45px;
+.imgrow.covers img:hover {
+	opacity: 0.6;
+}
+
+.imgrow.socials a {
+	vertical-align: top;
+}
+.imgrow.socials a:hover {
+	background: rgba(255,255,255,0.1);
+}
+.imgrow.socials a {
+	display: inline-block;
+	width: 44px;
+	height: 44px;
+	text-align: center;
 	border-radius: 25px;
+	border: 1px solid #555;
+	position: relative;
+}
+.imgrow.socials img {
+	max-width: 25px;
+	max-height: 25px;
+	width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
