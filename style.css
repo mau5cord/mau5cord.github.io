@@ -39,12 +39,10 @@ h3 {
 	overflow: hidden;
 	font-size: large;
 	font-weight: 600;
+	white-space: nowrap;
 }
 .box:hover {
 	background: rgba(255,255,255,0.1);
-}
-.box span {
-	vertical-align: middle;
 }
 .box .imgbox {
 	padding-right: 10px;
@@ -65,6 +63,13 @@ h3 {
 .box .imgbox .emoji {
 	font-size: 24px;
 }
+.box div.label {
+	display: inline-block;
+	vertical-align: middle;
+	white-space: normal;
+	max-width: calc(100% - 48px);
+}
+
 
 .imgrow {
 	margin: 10px 0;
