@@ -51,8 +51,12 @@ h3 {
 	height: 35px;
 	display: table-cell;
 	vertical-align: middle;
+	text-align: center;
 }
 .box .imgbox img {
 	width: 100%;
 	vertical-align: middle;
+}
+.box .imgbox .emoji {
+	font-size: 24px;
 }
