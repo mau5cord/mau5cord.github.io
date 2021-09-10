@@ -24,7 +24,8 @@ h2 {
 	color: #aaa;
 }
 h3 {
-	font-variant:small-caps
+	font-variant:small-caps;
+	margin-top: 16px;
 }
 
 .box {
@@ -59,4 +60,17 @@ h3 {
 }
 .box .imgbox .emoji {
 	font-size: 24px;
+}
+
+.imgrow {
+	margin: 10px 0;
+}
+
+.imgrow img {
+	width: 85px;
+	border-radius: 10px;
+}
+.imgrow.smaller img {
+	width: 45px;
+	border-radius: 25px;
 }
