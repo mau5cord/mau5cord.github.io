@@ -22,6 +22,7 @@ a {
 
 h2 {
 	color: #aaa;
+	margin-bottom: 24px;
 }
 h3 {
 	font-variant:small-caps;
@@ -69,15 +70,28 @@ h3 {
 	margin: 10px 0;
 }
 
-.imgrow.covers img {
+.imgrow.covers div {
+	background: #000;
+	display: inline-block;
+	border-radius: 12px;
+	overflow: visible;
 	height: 85px;
 	width: 85px;
-	border-radius: 10px;
+	background-size: 100% 100%;
 }
-.imgrow.covers img:hover {
-	opacity: 0.6;
+.imgrow.covers div > div {
+	display: none;
+	background: rgba(255,255,255,0.05);
+	width: 100%;
+	height: 100%;
+}
+.imgrow.covers div:hover > div {
+	display: block;
 }
 
+.imgrow.socials {
+	font-size: 0;
+}
 .imgrow.socials a {
 	vertical-align: top;
 }
@@ -92,6 +106,7 @@ h3 {
 	border-radius: 25px;
 	border: 1px solid #555;
 	position: relative;
+	margin: 0 4px 4px 0;
 }
 .imgrow.socials img {
 	max-width: 25px;
@@ -104,4 +119,8 @@ h3 {
     left: 0;
     right: 0;
     margin: auto;
+}
+
+.margin10 {
+	margin: 10px 0;
 }
