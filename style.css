@@ -1,13 +1,18 @@
 * {
 	margin: 0;
 	padding: 0;
+	color: #ccc;
+}
+
+body {
+	background: #181a1e;
 }
 
 #main {
 	font-family: "Segoe UI", "Helvetica Neue", "Helvetica", Arial, sans-serif;
 	margin: 0 auto;
 	max-width: 500px;
-	padding-top: 50px;
+	margin-top: 30px;
 	padding: 20px;
 }
 
@@ -16,13 +21,38 @@ a {
 }
 
 h2 {
-	color: #222;
+	color: #aaa;
+}
+h3 {
+	font-variant:small-caps
 }
 
 .box {
-	border: 1px solid #aaa;
+	border: 1px solid #555;
 	padding: 16px;
 	margin: 10px 0;
-	color: #333;
+	color: #ddd;
 	border-radius: 4px;
+	max-height: 60px;
+	overflow: hidden;
+	font-size: large;
+	font-weight: 600;
+}
+.box span {
+	vertical-align: middle;
+}
+.box .imgbox {
+	padding-right: 10px;
+	vertical-align: middle;
+	display: inline-block;
+}
+.box .imgbox>div {
+	width: 35px;
+	height: 35px;
+	display: table-cell;
+	vertical-align: middle;
+}
+.box .imgbox img {
+	width: 100%;
+	vertical-align: middle;
 }
