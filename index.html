@@ -284,9 +284,9 @@
 			
 			function showSnackbar(message) {
 			  var x = document.getElementById("snackbar");
-			  x.innerText = message;
+			  x.innerHTML = '<div>'+message+'</div>';
 			  x.className = "show";
-			  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 4000);
+			  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 4000-50);
 			}
 			
 			function copyDiscordId(id) {
