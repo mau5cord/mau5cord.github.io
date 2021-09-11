@@ -58,22 +58,22 @@
 		<h3> playlists </h3>
 		
 		<div class="imgrow covers">
-			<a target="_blank" href="https://open.spotify.com/playlist/0V1fFqqFq7LQHKbbvOABlF"> 
+			<a target="_blank" title="beathau5" href="https://open.spotify.com/playlist/0V1fFqqFq7LQHKbbvOABlF"> 
 				<div style="background-image: url('media/playlists/beathau5.jpg')"><div><!--lmao this is janky--></div></div>
 			</a>
-			<a target="_blank" href="https://open.spotify.com/playlist/5CrCzQ3xmTy5H1iHJTG4Lx">
+			<a target="_blank" title="deadmau5" href="https://open.spotify.com/playlist/5CrCzQ3xmTy5H1iHJTG4Lx">
 				
 				<div style="background-image: url('media/playlists/deadmau5.jpg')"><div></div></div>
 			</a>
-			<a target="_blank" href="https://open.spotify.com/playlist/2oBjF9RmA23YWnbh1YhBvL"> 
+			<a target="_blank" title="hau5trap" href="https://open.spotify.com/playlist/2oBjF9RmA23YWnbh1YhBvL"> 
 				
 				<div style="background-image: url('media/playlists/hau5trap.jpg')"><div></div></div>
 			</a>
-			<a target="_blank" href="https://open.spotify.com/playlist/17LBrhDR8OUxTpjJtmrBcN">
+			<a target="_blank" title="mau5trap" href="https://open.spotify.com/playlist/17LBrhDR8OUxTpjJtmrBcN">
 				
 				<div style="background-image: url('media/playlists/mau5trap.jpg')"><div></div></div>
 			</a>
-			<a target="_blank" href="https://open.spotify.com/playlist/0jWuhInQI4smwSb97j8wcB"> 
+			<a target="_blank" title="testpilot / unhooked" href="https://open.spotify.com/playlist/0jWuhInQI4smwSb97j8wcB"> 
 				
 				<div style="background-image: url('media/playlists/testpilot-unhooked.jpg')"><div></div></div>
 			</a>
@@ -268,6 +268,34 @@
 		
 		</div>
 		
+		<script>
+		
+			<!-- credit: https://stackoverflow.com/questions/31593297/using-execcommand-javascript-to-copy-hidden-text-to-clipboard -->
+			
+			function setClipboard(value) {
+				var tempInput = document.createElement("input");
+				tempInput.style = "position: absolute; left: -1000px; top: -1000px";
+				tempInput.value = value;
+				document.body.appendChild(tempInput);
+				tempInput.select();
+				document.execCommand("copy");
+				document.body.removeChild(tempInput);
+			}
+			
+			function showSnackbar(message) {
+			  var x = document.getElementById("snackbar");
+			  x.innerText = message;
+			  x.className = "show";
+			  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 4000);
+			}
+			
+			function copyDiscordId(id) {
+				setClipboard("<@"+id+">");
+				showSnackbar("copied @mention text to clipboard - paste on discord to mention!");
+			}
+		
+		</script>
+		
 		<div id="footer">
 			<hr />
 			<b>This website is not affiliated with Joel Zimmerman or any related parties.</b><br>
@@ -275,11 +303,14 @@
 				<a target="_blank" href="https://www.reddit.com/user/kodyleciejewski">Kody</a> 
 				and
 				<a target="_blank" href="https://www.reddit.com/user/dedmau7">Anna</a>
-				&ndash; Kody is also on <a target="_blank" href="https://discord.gg/mau5cord">mau5cord</a>!<br>
-			You can <a target="_blank" href="https://ko-fi.com/kodyleciejewski">support</a> the project if you like. Thank you! ♡<br>
+				&ndash;
+				message Kody&#8202;<div class="copyIcon" onclick="copyDiscordId('163882449619648512')"></div> on <a target="_blank" href="https://discord.gg/mau5cord">mau5cord</a> for questions or feedback!<br>
+			You can <a target="_blank" href="https://ko-fi.com/kodyleciejewski">support</a> the project if you like. Thank you! <span title="&lt;3" class="heart">♡</span><br>
 			The <a target="_blank" href="https://github.com/mau5cord/mau5cord.github.io">source</a> is on GitHub
 			&ndash; Hosted with <a target="_blank" href="https://pages.github.com/">GitHub Pages</a> 
 		</div>
+		
+		<div id="snackbar"></div>
 		
 	</div>
 
