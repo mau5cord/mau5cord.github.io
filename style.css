@@ -74,6 +74,9 @@ h3 {
 	padding: 8px 16px;
 	font-size: medium;
 }
+.box.thin .imgbox {
+	margin: 0 5px;
+}
 .box.thin .imgbox>div {
 	width: 25px;
 	height: 25px;
