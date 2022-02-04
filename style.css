@@ -70,6 +70,14 @@ h3 {
 	white-space: normal;
 	max-width: calc(100% - 48px);
 }
+.box.thin {
+	padding: 8px 16px;
+	font-size: medium;
+}
+.box.thin .imgbox>div {
+	width: 25px;
+	height: 25px;
+}
 
 
 .imgrow {
@@ -222,3 +230,6 @@ h3 {
   to {bottom: 0; opacity: 0;}
 }
 
+.fakeLink {
+	cursor: pointer;
+}
