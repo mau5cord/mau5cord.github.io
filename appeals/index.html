@@ -1,0 +1,36 @@
+Redirecting...
+<br><br>
+<noscript>
+Please <a href="https://www.enable-javascript.com/" target="_blank">enable JavaScript</a> to be automatically redirected.
+<br><br>
+</noscript>
+<!-- https://forms.gle/cERKpj15oQfrEnKH7 -->
+Go to <a id="redir" href="https://docs.google.com/forms/d/e/1FAIpQLSe--TII4UxKF3MZTIwbwF6P_8Ntf4op1Fxfe7PBHWTLstsH_A/viewform">https://forms.gle/cERKpj15oQfrEnKH7</a> if you're not being redirected.<br>
+
+<script>
+
+var url = document.getElementById("redir").href;
+
+var urlParams = new URLSearchParams(window.location.search);
+var newParams = new URLSearchParams();
+var paramMap = {
+	"u": "entry.198747283",
+	"r": "entry.1262258386",
+	"t": "entry.1324776386",
+	"c": "entry.631104611"
+}
+var nParams = 0;
+for (var inArg in paramMap) {
+	var q = urlParams.get(inArg);
+	if (q !== null) {
+		var outArg = paramMap[inArg];
+		newParams.append(outArg, q);
+		nParams++;
+	}
+}
+
+var rUrl = url + (nParams>0 ? "?" + newParams.toString() : "");
+
+window.location.href = rUrl;
+
+</script>
