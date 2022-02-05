@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>mau5cord.cc</title>
+	<link href="/style.css" rel="stylesheet" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	
+	<link rel="icon" href="media/newmau5.ico" type="image/x-icon" />
+	  
+	<meta content="website" property="og:type" />
+	<meta content="mau5cord.cc" property="og:title" />
+	<meta content="A collection of resources and utilities for fans of deadmau5, mau5trap, and other related brands." property="og:description" />
+	<meta content="hhttps://mau5cord.cc/" property="og:url" />
+	<meta content="https://mau5cord.github.io/media/mau5border_black.png" property="og:image" />
+	<meta content="#010101" name="theme-color" />
+</head>
+<body>
+
+	<div id="main">
+
+		<h2>about</h2>
+		
+		<a class="navlink" href="/">❮ Home</a>
+		
+		<h3>Audio Catalogues </h3>  With the incredible help of Xythium, we've created and arranged spreadsheets for four brands (beathau5, deadmau5, hau5trap, and mau5trap). Here, you can find information for any and all official releases ever published under these labels/aliases including artwork, track lists, purchase links, and availability.
+
+
+		<h3>Artwork Catalogues </h3> Again, with the help of Xythium, we've also properly stockpiled roughly 75% of all high-quality release artworks across all brands. We are actively looking to collect the rest but this process takes time and quality control.
+
+
+		<h3>Wallpapers </h3> We've made a handful over the past year and have also archived some official files provided by Joel and mau5trap. All files are high resolution.
+
+
+		<h3>deadmau5 livestream archive </h3> An entire website devoted to archiving past deadmau5 live streams. Everything from Twitch, Mixer, and even Maestro <i>(soon™)</i> - you can browse and watch vods here!
+
+
+		<h3>Playlists </h3> These Spotify playlists have been created and organized with extensive attention to detail. They are complete and actively maintained lists based on the specific category. Unavailable releases are also actively monitored outside of this website and all playlists are updated accordingly upon activity.
+
+
+		<h3>Official Discord </h3> This section is dedicated to linking the official deadmau5 / mau5trap community server and the mau5cord ban appeal form.
+
+
+		<h3>Other Communities </h3> A ​list of current well-established community platforms outside of mau5cord.
+
+
+		<h3>Social Links </h3> A complete link-tree of all major brands and all of their social media accounts
+		
+		
+		<script>
+		
+			<!-- credit: https://stackoverflow.com/questions/31593297/using-execcommand-javascript-to-copy-hidden-text-to-clipboard -->
+			
+			function setClipboard(value) {
+				var tempInput = document.createElement("input");
+				tempInput.style = "position: absolute; left: -1000px; top: -1000px";
+				tempInput.value = value;
+				document.body.appendChild(tempInput);
+				tempInput.select();
+				document.execCommand("copy");
+				document.body.removeChild(tempInput);
+			}
+			
+			function showSnackbar(message) {
+			  var x = document.getElementById("snackbar");
+			  x.innerHTML = '<div>'+message+'</div>';
+			  x.className = "show";
+			  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 4000-50);
+			}
+			
+			function copyDiscordId(id) {
+				setClipboard("<@"+id+"> ");
+				showSnackbar("copied @mention text to clipboard - paste on discord to mention!");
+			}
+		
+		</script>
+		
+		<div id="footer">
+			<hr />
+			<b>This website is not affiliated with Joel Zimmerman or any related parties.</b><br>
+			Made by
+				<a target="_blank" href="https://www.reddit.com/user/kodyleciejewski">Kody</a> 
+				and
+				<a class="fakeLink" onclick="showSnackbar('hi')">Anna</a>
+				&ndash;
+				message Kody on <a target="_blank" href="https://discord.gg/mau5cord">mau5cord</a> for questions or feedback <div class="copyIcon" title="copy @mention text to clipboard" onclick="copyDiscordId('163882449619648512')"></div><br>
+			The <a target="_blank" href="https://github.com/mau5cord/mau5cord.github.io">source</a> is on GitHub
+			&ndash; Hosted with <a target="_blank" href="https://pages.github.com/">GitHub Pages</a> <span title="&lt;3" class="heart">♡</span>
+		</div>
+		
+		<div id="snackbar"></div>
+		
+	</div>
+
+</body>
+</html>

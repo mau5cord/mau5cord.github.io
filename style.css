@@ -30,6 +30,14 @@ h3 {
 	margin-top: 16px;
 }
 
+a.navlink {
+	text-decoration: none;
+	opacity: 0.8;
+}
+a.navlink:hover{
+	text-decoration: underline;
+}
+
 .box {
 	border: 1px solid #555;
 	padding: 16px;
