@@ -244,3 +244,9 @@ a.navlink:hover{
 .fakeLink {
 	cursor: pointer;
 }
+
+.playlist-icon {
+	height: 20px;
+	vertical-align: bottom;
+	padding-right: 8px;
+}
